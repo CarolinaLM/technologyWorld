@@ -17,7 +17,7 @@ Este projeto é uma demonstração de habilidades em HTML, CSS, e JavaScript.
 
 ### 💻 Como Acessar
 
-Você pode acessar o WanderLust diretamente [aqui](https://wander-lust-teal.vercel.app/). 👀
+Você pode acessar o WanderLust diretamente [aqui](https://technology-world.vercel.app/). 👀
 
 ## 🚀 Tecnologias Utilizadas
 
