@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: #006CCD;
+    --azulTexto: #3E67C8;
+    --roxo: #5F2CE1;
+    --branco: #FFFFFF;
+}
+
+body {
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    padding: 4rem 8rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--azul);
+    align-items: center;
+    border-bottom: 3px solid transparent; /* Deixe a borda transparente para evitar a cor sólida padrão */
+    border-image: linear-gradient(to right, #003087, #006CCD, #003087); /* Define o gradiente desejado */
+    border-image-slice: 1; /* Define a largura da borda onde o gradiente será aplicado */
+    box-shadow: 0px 2px 5px rgba(0, 108, 205, 0.5); /* Adiciona uma sombra 3D */
+}
+
+.navbar_itens {
+    display: flex;
+    width: 100%;
+}
+
+.navbar_link-brand img{
+    width: 180px;
+    cursor: pointer;
+}
+
+.links{
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: text-shadow 0.5s ease-in-out; 
+}
+
+.links:hover{
+    color: var(--roxo);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* X e Y deslocamento, desfoque e cor da sombra */
+}
+
+.navbar_link {
+    padding-right: 3rem;
+}
+
+.navbar_itens-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar_menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar_menu-icon .fa-times {
+    display: none;
+}
+
+@media (max-width: 930px) {
+    /* Navbar */
+    .navbar {
+        padding: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_itens {
+        flex-direction: column;
+    }
+
+    .navbar_itens-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out; /* Transição suave */
+        padding-top: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .links{
+        border: 1px solid var(--azul);
+        width: 40%;
+        margin-top: 0.5rem;
+        padding-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .navbar_menu-icon {
+        display: block;
+        margin-left: auto;
+        margin-top: -3.5rem;
+    }
+
+    .navbar_menu-icon.active .fa-bars {
+        display: none;
+    }
+
+    .navbar_menu-icon.active .fa-times {
+        display: block;
+    }
+
+    .navbar_menu-icon.active ~ .navbar_itens-right {
+        display: flex;
+    }
+
+    .navbar_link {
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}

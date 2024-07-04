@@ -1,0 +1,237 @@
+/* section  */
+.section_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 4rem 5rem;
+}
+
+.section_container-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section_h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    color: var(--azulTexto);
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.section_h1:hover{
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.section_paragrafo {
+    font-family: "Poppins", sans-serif;
+    margin: 4rem;
+    color: var(--azulTexto);
+    text-align: start;
+}
+
+.section_paragrafo img {
+    width: 80px;
+    margin-right: -1.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.section_container-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* section DOIS */
+.sectionDois_container2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 4rem 5rem;
+}
+
+.sectionDois_container-item2 {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sectionDois_container-img2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionDois_container-img2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionDois_h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    color: var(--azulTexto);
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sectionDois_paragrafo2{
+    font-family: "Poppins", sans-serif;
+    margin: 4rem;
+    color: var(--azulTexto);
+    text-align: start;
+}
+
+/* section TRES */
+.sectionTres_container3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 4rem 5rem;
+}
+
+.sectionTres_container-img3{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sectionTres_container-img3 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionTres_container-item3{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sectionTres_container-item3 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionTres_h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    color: var(--azulTexto);
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sectionTres_paragrafo3{
+    font-family: "Poppins", sans-serif;
+    margin: 4rem;
+    color: var(--azulTexto);
+    text-align: start;
+}
+
+/* Footer */
+
+.footer_container{
+    border-top: 3px solid transparent; /* Deixe a borda transparente para evitar a cor sólida padrão */
+    border-image: linear-gradient(to right, #003087, #006CCD, #003087); /* Define o gradiente desejado */
+    border-image-slice: 1; /* Define a largura da borda onde o gradiente será aplicado */
+    box-shadow: 0px -2px 5px rgba(0, 108, 205, 0.5);
+    background-color: var(--azulTexto);
+    padding: 3rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+.footer_paragrafo p a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+@media (max-width: 930px) {
+    /* section */
+    .section_container {
+        flex-direction: column;
+    }
+
+    /* section DOIS  */
+    .sectionDois_container2{
+        flex-direction: column;
+    }
+
+    .sectionDois_container-item2{
+        order: 1;
+    }
+
+    .sectionDois_container-img2{
+        order: 2;
+    }
+
+    /* section TRES */
+    .sectionTres_container3{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 520px) {
+    /* section */
+    .section_h1 {
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        font-weight: 700;
+    }
+
+    .section_paragrafo {
+        margin: 1rem 0;
+    }
+
+    .section_paragrafo img {
+        width: 50px;
+        margin-right: -1rem;
+        margin-bottom: -1.5rem;
+    }
+
+     /* section DOIS  */
+     .sectionDois_h2{
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+     }
+
+     .sectionDois_paragrafo2{
+        margin: 1rem 0;
+     }
+
+     /* section TRES */
+     .sectionTres_h2{
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        font-weight: 600;
+    }
+
+    .sectionTres_paragrafo3{
+        margin: 1rem 0;
+    }
+     
+    /* footer */
+    .footer_container{
+        font-size: 0.8rem;
+    }
+}
